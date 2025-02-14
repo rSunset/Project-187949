@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<h1>Tablas</h1>
+	<!--Estilo en lines-->
+	<style type="">
+		table{
+			/*
+			Linea continua: solid
+			Linea punteada: doted
+			Linea con guines: dashes*/
+			border: 3px solid white;
+			width: 75%;
+			margin: auto;
+			background: green;
+			color: white;
+		}
+		th{
+			border: 5px solid white;
+			background: green;
+			color: white;
+			text-align: left;
+			font-family: arial, calibri, candara;
+		}
+		td{
+			border: 3px solid white;
+			font-family: calibri;
+			line-height: 70%;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	
+		<table>
+			<figcaption >Uso de tablas en HTML</figcaption>
+			<thead>
+				<tr>
+					<th colspan = "3">Titulo 1</th>
+					
+					<th>Titulo 4</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan = "2">Celda 1</td>
+					<td>Celda 2</td>
+					<td>Celda 3</td>
+					<td>Celda 4</td>
+				</tr>
+				<tr>
+					
+					<td>Celda 6</td>
+					<td>Celda 7</td>
+					<td>Celda 8</td>
+				</tr>
+				<tr>
+					<td rowspan = "2">Celda 9</td>
+					<td>Celda 10</td>
+					<td>Celda 11</td>
+					<td>Celda 12</td>
+				</tr>
+				<tr>
+					
+					<td>Celda 14</td>
+					<td>Celda 15</td>
+					<td>Celda 16</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Totales 1</td>
+					<td>Totales 2</td>
+					<td>Totales 3</td>
+					<td>Totales 4</td>
+				</tr>
+			</tfoot>
+		</table>
+</body>
+</html>
