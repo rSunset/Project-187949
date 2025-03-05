@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial scale = 1">
+<title>Practica 1 - Parcial 2</title>
+<style>
+    body
+    {
+        background-color: steelblue;
+        font-family: Arial, Helvetica, sans-serif;
+        color: azure;
+    }
+    h1
+    {
+        margin: auto;
+        width: 80%;
+        background-color: azure;
+        color: black;
+        text-align: right;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    h2
+    {
+        margin: auto;
+        width: 70%;
+        background-color: azure;
+        color: black;
+        text-align: right;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    div
+    {
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        color: azure;
+        background-color:burlywood;
+        border: 2px solid burlywood;
+        border-radius: 5px;
+    }
+    legend
+    {
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+    }
+    input
+    {
+        margin: auto;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = text]
+    {
+        margin: auto;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = password]
+    {
+        margin: auto;
+        width: 70%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = password]:focus
+    {
+        color: red;
+        background-color: steelblue;
+        margin: 5px;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    fieldset
+    {
+        border: 2px solid azure;
+        border-radius: 5px;
+        margin: auto;
+        padding: 50px;
+    }
+    input[type = submit]
+    {
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        border: 2px solid aliceblue;
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: 8px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: steelblue;
+    }
+    input[type = submit]:hover
+    {
+        margin: auto;
+        width: 70%;
+        padding: 15px;
+        border: 2px solid aliceblue;
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: 8px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: steelblue;
+        cursor: pointer;
+    }
+    input[type = reset]
+    {
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        border: 2px solid aliceblue;
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: 14px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: steelblue;
+    }
+    input[type = reset]:hover
+    {
+        margin: auto;
+        width: 70%;
+        padding: 15px;
+        border: 2px solid aliceblue;
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: 8px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        color: steelblue;
+        cursor: pointer;
+    }
+    td
+    {
+        margin: 20px;
+        padding: 10px;
+        width: 500px;
+    }
+    th
+    {
+        margin: 20px;
+        padding: 10px;
+        width: 500px;
+    }
+    select
+    {
+        margin: auto;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    select:hover
+    {
+        color: azure;
+        background-color: steelblue;
+        margin: 5px;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = date]
+    {
+        margin: auto;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = date]:hover
+    {
+        color: azure;
+        background-color: steelblue;
+        margin: 5px;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = time]
+    {
+        margin: auto;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = time]:hover
+    {
+        color: azure;
+        background-color: steelblue;
+        margin: 5px;
+        width: 100%;
+        border: 2px solid azure;
+        border-radius: 5px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    input[type = checkbox]
+    {
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+        border: 2px solid aliceblue;
+        border-radius: 5px;
+        color: steelblue;
+        cursor: pointer;
+    }
+    label
+    {
+        text-align: center;
+        font-family:  Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: 14px;
+    }
+</style>
+</head>
+<body>
+    <hgroup>
+        <h1>Vencedor Autobuses</h1><br/>
+        <h2>Sito de compra de boletos</h2><br/>
+    </hgroup>
+        <div>
+        <form method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+                <table>
+                     <thead>
+                            <th>
+                                Nombre:
+                            </th>
+                            <th>
+                                Apellido paterno:
+                            </th>
+                            <th>
+                                Apellido Materno:
+                            </th>
+                     </thead>
+                     <tbody>
+                        <td>
+                            <input type="text" name="usuario" id="usuario"
+                            placeholder="Nombre" title="nombre" required>
+                        </td>
+                        <td>
+                            <input type="text" name="apellidoPaterno" id="apellidoPaterno"
+                            placeholder="apellidoPaterno" title="Apellido Paterno" required>
+                        </td>
+                        <td>
+                            <input type="text" name="apellidoMaterno" id="apellidoMaterno"
+                            placeholder="apellidoMaterno" title="Apellido Materno" required>
+                        </td>
+                     </tbody>
+                     <thead>
+                         <th>
+                                Nomber de usuario(*Solo empleados):
+                            </th>
+                            <th>
+                                Constraseña(*Solo empleados):
+                            </th>
+                     </thead>
+                     <tbody>
+                     <td>
+                            <input type="text" name="username" id="username"
+                            placeholder="Nomber de usuario" size="15" maxlength="15" title="Nombre de usuario" required>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password"
+                            placeholder="Contraseña" size="20" maxlength="20" title="Contraseña" required>
+                        </td>
+                     </tbody>
+                </table>
+            </fieldset>
+        </form>
+        
+        <form method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos del viaje</legend>
+                <table>
+                    <thead>
+                        <th>
+                            Fecha de salida:
+                        </th>
+                        <th>
+                            Hora de salida:
+                        </th>
+                        <th>
+                            Ciudad de salida:
+                        </th>
+                        <th>
+                            Ciudad de llegada:
+                        </th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <input type="date" name="fecha" id="fecha"
+                            title="Fecha" required>
+                        </td>
+                        <td>
+                            <input type="time" name="hora" id="hora"
+                            title="Hora" required>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="1" selected>Rioverde</option>
+                                <option value="2">San Ciro de Acosta</option>
+                                <option value="3">Jalpan de Serra</option>
+                                <optgroup label="San Luis Potosí">
+                                <option value="4">Alameda</option>
+                                <option value="5">Terminal Terrestre Potosina</option>
+                                <option value="6">Soledad de Graciano Sanchez</option>
+                                </optgroup>
+                                <option value="7">Ciudad Valles</option>
+                                <option value="8">Matehuala</option>
+                                <option value="9">Ciudad del Maíz</option>
+                                <option value="10">Cerritos</option>
+                                <option value="11">Xilitla</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option value="1">Rioverde</option>
+                                <option value="2">San Ciro de Acosta</option>
+                                <option value="3">Jalpan de Serra</option>
+                                <optgroup label="San Luis Potosí">
+                                <option value="4">Alameda</option>
+                                <option value="5" selected>Terminal Terrestre Potosina</option>
+                                <option value="6">Soledad de Graciano Sanchez</option>
+                                </optgroup>
+                                <option value="7">Ciudad Valles</option>
+                                <option value="8">Matehuala</option>
+                                <option value="9">Ciudad del Maíz</option>
+                                <option value="10">Cerritos</option>
+                                <option value="11">Xilitla</option>
+                            </select>
+                        </td>
+                    </tbody>
+                    <thead>
+                        <th>
+                            C.P.:
+                        </th>
+                        <th>
+                            Fecha actual:
+                        </th>
+                        <th>
+                            Correo electrónico:
+                        </th>
+                        <th>
+                            Número de teléfono:
+                        </th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <input type="text" name="codpost" id="codpost" 
+                            placeholder="Código Postal" title="Código Postal">
+                        </td>
+                        <td>
+                            <input type="date" name="hoy" id="hoy">
+                        </td>
+                        <td>
+                            <input type="mail" name="correo" id="correo"
+                            placeholder="Correo electrónico" title="Correo electrónico">
+                        </td>
+                        <td>
+                            <input type="text" name="telefono" id="telefono"
+                            placeholder="Número de teléfono" title="Número de teléfono">
+                        </td>
+                    </tbody>
+                    <tbody>
+                        <td>
+                            <input type="submit" name="enivar" id="enviar"
+                            value="Envio" title="Envio">
+                        </td>
+                        <td>
+                            <input type="reset" name="borrar" id="borrar"
+                            value="Prestablecido" title="Prestablecido">
+                        </td>
+                        <td>
+                            <label>Terminos y condiciones</label>
+                        </td>    
+                        <td>
+                            <input type="checkbox" name="terminos" id="terminos"
+                            value="1" title="Aceptar terminos y condiciones required">
+                        </td>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
