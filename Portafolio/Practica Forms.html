@@ -1,0 +1,286 @@
+<!DOCTYPE html> 
+<!-- Formularios -->
+<html>   
+<head>   
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title> Formularios </title>
+<style>
+	body
+	{
+		background-color: steelblue;
+		font-family: Arial, Helvetica, sans-serif;
+		color: azure;
+	}
+	h1
+	{
+		background-color: azure;
+		color: black;
+		text-align: right;
+		font-family: 'Courier New', Courier, monospace;
+		padding: 20px;
+	}
+	div
+	{
+		width: 80%;
+		padding: 10px;
+		margin: auto;
+		color: azure;
+		background-color:burlywood;
+	}
+	input[type = text]
+	{
+		margin: 5px;
+		width: 100%;
+		border: 2px solid azure;
+		border-radius: 5px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	input[type = password]
+	{
+		margin: 5px;
+		width: 70%;
+		border: 2px solid azure;
+		border-radius: 5px;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	input[type = password]:focus
+	{
+		color: red;
+		background-color: steelblue;
+		margin: 5px;
+		width: 100%;
+		border: 2px solid azure;
+		border-radius: 5px;
+		padding: 10px;
+		box-sizing: border-box;
+
+	}
+	fieldset
+	{
+		border: 2px solid azure;
+		border-radius: 5px;
+	}
+	input[type = submit]
+	{
+		margin: auto;
+		width: 70%;
+		padding: 10px;
+		border: 2px solid aliceblue;
+		text-align: center;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 20px;
+		margin: 8px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		color: steelblue;
+	}
+	input[type = submit]:hover
+	{
+		margin: auto;
+		width: 100%;
+		padding: 15px;
+		border: 2px solid aliceblue;
+		text-align: center;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 20px;
+		margin: 8px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		color: steelblue;
+		cursor: pointer;
+	}
+	input[type = reset]
+	{
+		margin: auto;
+		width: 70%;
+		padding: 10px;
+		border: 2px solid aliceblue;
+		text-align: center;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 20px;
+		margin: 14px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		color: steelblue;
+	}
+	input[type = reset]:hover
+	{
+		margin: auto;
+		width: 100%;
+		padding: 15px;
+		border: 2px solid aliceblue;
+		text-align: center;
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 20px;
+		margin: 14px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		color: steelblue;
+		cursor: pointer;
+	}
+	input[type=url]
+	{
+		width: 25%;
+		border: 4px solid aliceblue;
+		border-radius: 4px;
+		background-image: url(lupa.png);
+		background-repeat: no-repeat;
+		image-resolution: 64px;
+		padding: 5px 5px 5px 20px;
+	}
+	input[type=url]:focus
+	{
+		width: 100%;
+		border: 4px solid aliceblue;
+		border-radius: 4px;
+		background-color: steelblue;
+		color: red;
+		transition-delay: 1s;
+		transition: width 0.4s ease-in-out;
+		box-sizing: border-box;
+		padding: 5px 5px 5px 20px;
+	}
+	input[type=number]
+	{
+		width: 100%;
+		border: 4px solid aliceblue;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 15px;
+		margin: 4px;
+	}
+	input[type=number]:focus
+	{
+		width: 100%;
+		border: 4px solid aliceblue;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 15px;
+		margin: 4px;
+		background-color: steelblue;
+		color: red;
+	}
+	select
+	{
+		width: 100%;
+		padding: 15px;
+		border-radius: 4px;
+		border: none;
+	}
+	textarea
+	{
+		width: 100%;
+		height: 150px;
+		border: 4px solid aliceblue;
+		border-radius: 4px;
+		box-sizing: border-box;
+		resize: none;
+	}
+	
+</style>
+</head>
+<body> 
+	<div>
+	<header>
+		<h1>
+			Compras online
+		</h1>
+	</header>
+<section>
+	<form method="post" action="" 
+	enctype="text/plain">
+	<fieldset>
+		<legend>Información del Cliente</legend> 
+		<label for="nombre">
+		Nombre: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Nombre" name="nombre" id="nombre" autofocus/>
+		<label for="ap">
+		Apellido paterno:
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Apellido paterno" name="ap" id="ap"/>
+		<label for="am">
+		Apellido materno:
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Apellido materno" name="am" id="am"/><br/>
+		<label for="user">
+		Nombre de usuario: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Usuario" name="user" id="user"/>
+		<label for="pass">
+		Contraseña:
+		</label><br/>
+		<input type="password" maxlength="25" placeholder="Password" name="pass" id="pass"/>
+	</fieldset>
+
+	<fieldset>
+		<legend>Datos de facturación</legend> 
+		<label for="calle">
+		Calle: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="Usuario" name="usuario" id="usuario"/>
+		<label for="numero">
+		Num:
+		</label><br/>
+		<input type="text" name="numero" id="numero" placeholder="Num. Exterior" maxlength="20" />
+		<label for="col">
+		Colonia: 
+		</label><br/>
+		<input type="text" name="col" id="col" placeholder="Colonia"/>
+		<label for="correo">
+		E-mail: 
+		</label><br/>
+		<input type="text" maxlength="25" placeholder="E-mail" name="correo" id="correo" />
+		<label for="cp">
+		Código Postal:
+		</label><br/>
+		<input type="number" name="cp" id="cp" placeholder="C.P."/><br/>
+		
+		<label for="rfc">R.F.C.:</label><br/>
+		<input type="text" name="rfc" id="rfc" placeholder="R.F.C"/>
+
+		<label for="web">Sitio web:</label><br/>
+		<input type="url" name="web" id="web">
+		</fieldset>
+
+		<fieldset>
+			<legend>Datos del artículo adquirido</legend> 
+		<label for="marca">Tipo</label><br/>
+			<select name="marca" id="marca" size="2">
+			<option>Vestido</option>
+			<option>Pantalón</option>
+			<option>Playera</option>
+			<option>Camisa</option>
+			<option>Chamarra</option>
+			</select>
+
+		<label for="producto">Talla</label><br/>
+		<input type="checkbox"/>Chico<br/>
+		<input type="checkbox"/>Mediano<br/>
+		<input type="checkbox"/>Grande<br/>
+
+					
+		<label for="colores">Selecciona el Color</label><br/>	
+		<input type="color" name="colores" id="colores" placeholder="Color" /><br/><br/>
+
+		<label for="comentarios">Sugerencias:</label>
+		<textarea name="comentarios" id="comentarios"></textarea>
+
+		<input type="submit" name="enviar" id="enviar" value="Enviar datos">
+		<input type="reset" name="borrar" id="borrar" value="Borrar datos">
+		
+		</fieldset>
+	</form>
+
+</section>
+<footer>
+	<h3>
+	&copy; Distribuidor autorizado de productos de calidad.
+	</h3>
+
+</footer>
+</div>
+</body>
+</html>
