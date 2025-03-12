@@ -1,0 +1,33 @@
+ul
+{
+    list-style-type: none;
+    width: 33%;
+    padding: 0;
+    margin: 0;
+}
+
+li a
+{
+    display: block;
+    color: #525B56;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #A4978E;     
+    font-family: Impact, 'Arial Narrow Bold', sans-serif; 
+    font-size: medium;
+}
+
+li a:hover
+{
+    display: block;
+    color: #FFFFFF;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #132227;      
+}
+
+li a.activo
+{
+    background-color: #040C0E;
+    color: #FFFFFF;
+}

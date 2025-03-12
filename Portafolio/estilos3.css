@@ -1,0 +1,72 @@
+ul
+{
+    list-style-type: none;
+    width: 15%;
+    padding: 0;
+    margin: 15px;
+    height: 95%;
+    background-color: #A4978E;
+    position: fixed;
+    overflow: auto;
+}
+
+li a
+{
+    display: block;
+    color: #525B56;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #A4978E;     
+    font-family: Impact, 'Arial Narrow Bold', sans-serif; 
+    font-size: medium;
+}
+
+li a:hover
+{
+    display: block;
+    color: #FFFFFF;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #132227;
+}
+
+li a.activo
+{
+    background-color: #040C0E;
+    color: #FFFFFF;
+}
+.capa1
+{
+    margin-left: 20%;
+    padding: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p
+{
+    text-align: justify;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold 100;
+    font-style: normal;
+}
+
+h1{
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold 100;
+    font-style: normal;
+  }
+
+h2
+{
+    font-family: 'Serif';
+    font-optical-sizing: auto;
+    font-weight: bold 100;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Serif";
+    src: url(Serif/PTSerif-Bold.ttf) format("truetype");
+}
