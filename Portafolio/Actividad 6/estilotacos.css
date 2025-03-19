@@ -1,0 +1,171 @@
+ul
+{
+    list-style-type: none;
+    width: 15%;
+    padding: 0;
+    margin: 10px;
+    height: 95%;
+    background-color: #F8EECB;
+    position: fixed;
+    overflow: auto;
+    border: #6E433D;
+    border-radius: 7px;
+}
+
+li
+{
+    display: block;
+    color: #D23D2D;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #F8EECB;     
+    font-family: Serif; 
+    font-size:large;
+    font-weight: bolder;
+}
+
+li:hover
+{
+    display: block;
+    color: #F5C065;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #6E433D;
+}
+
+@font-face
+{
+    font-family: "Serif";
+    src: url(Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf) format("truetype");
+}
+
+p
+{
+    text-align: justify;
+    font-family: "Serif", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold 100;
+    font-style: normal;
+}
+
+.contenido
+{
+    margin-left: 18%;   
+    padding: 16px;
+    font-family: Serif;
+}
+
+li.activo
+{
+    background-color: #D23D2D;
+    color: #F8EECB;
+}
+
+h1
+{
+    text-align: center;
+    font-family: Serif;
+    font-weight: bold 100;
+    background-color: #6E433D;
+    color: #F8EECB;
+    border: 3px solid #6E433D;
+    border-radius: 7px;
+}
+
+h2
+{
+    text-align: center;
+    font-family: Serif;
+    font-weight:bold 100;
+}
+
+body
+{
+    background-image: url(taco1.jpg);
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.imagenes
+{
+    max-width: 200px;
+    max-height: 200px;
+    background-color: #6E433D;
+    border-radius: 7px;
+}
+
+.nosotrosimg
+{
+    max-width: 800px;
+    max-height: 800px;
+    border: 3px solid #6E433D;
+    border-radius: 7px;
+}
+
+.nosotrostxt
+{
+    background-color: #31603D;
+    color: #F8EECB;
+    margin-left: 9%;
+    padding: 30px 90px 30px 90px;
+    border-radius: 7px;
+    border: 3px solid #6E433D;   
+}
+
+.secund
+{
+    text-align: center;
+    font-family: Serif;
+    background-color: #D23D2D;
+    color: #F8EECB;
+    border: 3px solid #D23D2D;
+    border-radius: 7px;
+    width: 75%;
+    margin: auto;
+}
+
+th
+{
+    background-color: #6E433D;
+    color: #F8EECB;
+    border-radius: 7px;
+    font-weight: bolder 10;
+    font-family: Serif;
+    text-align: center;
+    margin: auto;
+}
+
+td
+{
+    font-weight: lighter 20;
+    font-family: Serif;
+    text-align: center;
+    margin: auto;
+}
+
+table
+{
+    background-color: #F8EECB;
+    color: #6E433D;
+    border: 3px solid #6E433D;
+    border-radius: 7px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer
+{
+    background-color: #31603D;
+    color: #F8EECB;
+    border: 3px solid #6E433D;
+    border-radius: 7px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 0px 5px 15px 5px;
+}
