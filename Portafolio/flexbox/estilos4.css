@@ -1,0 +1,28 @@
+.flex-container
+{
+    display: flex; /* Caja flexible*/
+    background-color: aliceblue;
+    /*flex-direction: row-reverse;  row - column - column-reverse - row-reverse
+    flex-wrap: wrap;*/
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+
+.flex-container div
+{
+    background: lightblue;
+    margin: 12px;
+    padding: 12px;
+    width: 150px;
+}
+
+@media(max-width:500px)
+{
+    .flex-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
