@@ -1,0 +1,110 @@
+body
+{
+    background-color: aqua;
+}
+
+.absolutas
+{
+    text-align: center;
+    background-color: rebeccapurple;
+    margin-top: 3%;
+    
+}
+
+.relativas
+{
+    text-align: center;
+    background-color: rebeccapurple;
+    margin-top: 3%;
+    
+}
+
+.pixeles
+{
+    border: 1px solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 2px;
+}
+
+.points
+{
+    border: 1pt solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10pt;
+    margin: auto;
+    margin-bottom: 2pt;
+}
+
+.paica
+{
+    border: 1pc solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1pc;
+    margin: auto;
+    margin-bottom: 1pc;
+}
+
+.centi
+{
+    border: 1cm solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5cm;
+    margin: auto;
+    margin-bottom: 1cm;
+}
+
+.in
+{
+    border: 1in solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5in;
+    margin: auto;
+    margin-bottom: 1in;
+}
+
+.primera
+{
+    border: 1em solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.segunda
+{
+    border: 1rem solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.tercera
+{
+    border: 1vh solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1vh;
+    margin: auto;
+    margin-bottom: 1vh;
+}
+
+.cuarta
+{
+    border: 1ex solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 3ex;
+    margin: auto;
+    margin-bottom: 1ex;
+}
+
+.quinta
+{
+    border: 1vw solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2vw;
+    margin: auto;
+    margin-bottom: 1vw;
+}
