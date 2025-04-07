@@ -1,0 +1,94 @@
+body {
+    background-color: #e7e8e7;
+}
+
+/* TITULO */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.titulo {
+    background-color: #394A56;
+    text-align: center;
+    height: 10dvh;
+    width: 100%;
+    color: white;
+    font-size: 3vw;
+    font-weight: bolder;
+    padding: 12px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BARRA DE NAV */
+.bnav{
+	position: fixed;
+	background: #394A56;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bnav div{
+	background: #2C6485;
+	margin: 12px;
+	width: 25dvh;
+	padding: 12px;
+	text-align: center;
+	font-family: verdana;
+}
+
+.bnav div a{
+	text-decoration: none;
+	color: #EBF7FF;
+	display: block;
+}
+
+div .inicio{
+	background-color: #092B40;
+	color: #EBF7FF;
+}
+
+div .actual{
+	background-color: #143A5F;
+}
+
+
+/* CONTENIDO */
+td{
+	width: 25dvw;
+}
+
+td img {
+	width: 50dvw;
+    height: 20dvw;
+    object-fit: cover;
+}
+
+h2 {
+	text-align: center;
+	font-family: Verdana;
+	color: #8FBFDA;
+}
+
+p {
+	font-family: calibri;
+	text-align: justify;
+	font-size: large;
+}
+
+footer, footer p{
+	text-align: center;
+	background-color: #394A56;
+	color: #e7e8e7;
+    font-size: 1.5dvh;
+	height: auto;
+	width: 100%;
+	padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

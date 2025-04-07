@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" type="text/css" href="estiloindex.css">
+        <title>Inteligencia artificial</title>
+        <link rel="icon" type="image/webp" href="icon.webp">
+        <script>
+            window.onload = function () {
+                // Variables
+                const IMAGENES = [
+                    'ialink.jpg',
+                    'iacentro.jpg',
+                    'ialink2.jpg'
+                ];
+                const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
+                let posicionActual =1;
+                let $botonRetroceder = document.querySelector('#retroceder');
+                let $botonAvanzar = document.querySelector('#avanzar');
+                let $imagen = document.querySelector('#imagen');
+                let intervalo;
+    
+                // Funciones
+    
+                /**
+                 * Funcion que cambia la foto en la siguiente posicion
+                 */
+                function pasarFoto() {
+                    if(posicionActual >= IMAGENES.length - 1) {
+                        posicionActual = 0;
+                    } else {
+                        posicionActual++;
+                    }
+                    renderizarImagen();
+                }
+    
+                /**
+                 * Funcion que cambia la foto en la anterior posicion
+                 */
+                function retrocederFoto() {
+                    if(posicionActual <= 0) {
+                        posicionActual = IMAGENES.length - 1;
+                    } else {
+                        posicionActual--;
+                    }
+                    renderizarImagen();
+                }
+    
+                /**
+                 * Funcion que actualiza la imagen de imagen dependiendo de posicionActual
+                 */
+                function renderizarImagen () {
+                    $imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+                }
+
+                // Eventos
+                $botonAvanzar.addEventListener('click', pasarFoto);
+                $botonRetroceder.addEventListener('click', retrocederFoto);
+                // Iniciar
+                renderizarImagen();
+            }
+            </script>
+    </head>
+
+    <body>
+            <div class="titulo">
+                <h1>INTELIGENCIA ARTIFICIAL</h1>
+            </div>
+            
+            <ul class="lateral">
+                <li>
+                <a href="index2.html" class="actual">Inicio</a>
+                </li>
+                <li>
+                    <a href="contexto.html">Contexto</a>
+                </li>
+                <li>
+                    <a href="impacto.html">Impacto</a>
+                </li>
+                <li>
+                    <a href="situacion.html">Situación</a>
+                </li>
+                <li>
+                    <a href="">Servicios</a>
+                </li>
+                <li>
+                    <a href="">Interacción</a>
+            </ul>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <div class="slider">
+            <button id="retroceder"></button>
+            <div id="imagen"></div>
+            <button id="avanzar"></button>
+        </div>
+
+        <hgroup>
+            <h2 class="objt">OBJETIVO</h2>
+
+            <div class="texto">
+                Llevar a cabo la tarea de hacer un sitio web informativo sobre 
+                el funcionamiento de la inteligencia artificial, su uso en la vida diaria, 
+                implicaciones éticas de su uso, ventajas de la correcta utilización como una 
+                herramienta y desventajas de su uso excesivo como un desahogo de responsabilidades. 
+                Proponemos crear un sitio web que sea sin fines de lucro, informativo y accesible, 
+                que informa a las masas respecto al uso adecuado de esta herramienta, sus beneficios 
+                y sus desventajas.
+            </div>
+        </hgroup>
+
+        <footer>
+			<p>Proyecto de Curso de Nucleo Optativo: Programación Web 1 <br>
+			Berlanga Contreras Ahtziri - 186106 & Roque Flores Cristopher - 187949</p>
+			<address>Universidad Politecnica de San Luis Potosí. C. Urbano Villalón 500, La Ladrillera, 78369 San Luis Potosí, S.L.P.</address>
+		</footer>
+    </body>
+</html>
