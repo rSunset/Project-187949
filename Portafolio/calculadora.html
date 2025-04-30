@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilocalc.css">
+    <script type="text/javascript" src="calculadora.js"></script>
+
+    <title>Calculadora en JavaScript</title>
+</head>
+<body>
+    
+        <h1 class="top-calculadora">Calculadora en JavaScript</h1>
+        <form class="form">
+            <div class="container">
+                <div class="valores">
+                    <label for="val1">Ingese el valor 1: </label><br/>
+                    <input class="btn" type="text" name="val1" id="val1" placeholder="Ingresa el valor 1"><br/>
+                </div>
+                <div class="valores">
+                    <label for="val2">Ingese el valor 2: </label><br/>
+                    <input class="btn" type="text" name="val2" id="val2" placeholder="Ingresa el valor 2"><br/>
+                </div>
+            </div>
+            <div class="opc-operacion">
+                <input class="btn" type="button" value="Suma" name="suma" id="suma" onclick="sumar()">
+                <input class="btn" type="button" value="Resta" name="Resta" id="Resta" onclick="restar()">
+                <input class="btn" type="button" value="Multiplicación" name="Multiplicacion" id="Multiplicacion" onclick="multiplicar()">
+                <input class="btn" type="button" value="División" name="Division" id="Division" onclick="dividir()">
+            </div>
+        </form>
+    
+    <div class="container">
+        <h2 class="top-resultado">El resultado es: </h2>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>
