@@ -386,7 +386,7 @@ body
 .text
 {
     height: 600px;
-    display: flex;
+    position: relative;
     align-items: center;
     margin-bottom: 100px;
 }
