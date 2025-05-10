@@ -385,7 +385,7 @@ body
 
 .text
 {
-    height: 500px;
+    height: auto;
     position: static;
     align-items: center;
     margin-bottom: 100px;
@@ -772,9 +772,14 @@ body
         top: calc(40% - 100px);
     }
 
-    .text .texto
+    .home .indicator
     {
-        font-size: 20px;
+        top: calc(70%);
+    }
+
+    .text h1
+    {
+        margin-top: -30px;
     }
 }
 
@@ -852,21 +857,16 @@ body
         top: calc(80% + 10px);
     }
 
-    .text
-    {
-        height: 500px;
-    }
-
     .text h1
     {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         font-size: 30px;
     }
 
     .text .texto
     {
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .footer-items
@@ -890,11 +890,6 @@ body
         top: calc(80% - 10px);
     }
 
-    .text
-    {
-        height: 600px;
-    }
-
     .text h1
     {
         margin-top: -10px;
@@ -902,6 +897,7 @@ body
 
     .text .texto
     {
+        font-size: 18px;
         margin-bottom: 60px;
         margin: 20px 20px;
         padding: 40px 30px;
@@ -922,21 +918,6 @@ body
     {
         top: calc(80% - 15px);
     }
-
-    .text
-    {
-        height: 500px;
-    }
-
-    .text h1
-    {
-        margin-top: -20px;
-    }
-
-    .text .texto
-    {
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width:350px)
@@ -949,11 +930,6 @@ body
         top: calc(40% - 25px);
     }
 
-    .text
-    {
-        height: 400px;
-    }
-
     .text h1
     {
         font-size: 23px;
@@ -963,6 +939,6 @@ body
     .text .texto
     {
         margin-top: -10px;
-        font-size: 13.2px;
+        font-size: 15px;
     }
 }
