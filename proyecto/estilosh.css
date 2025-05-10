@@ -385,8 +385,8 @@ body
 
 .text
 {
-    height: 600px;
-    position: relative;
+    height: 500px;
+    position: static;
     align-items: center;
     margin-bottom: 100px;
 }
@@ -760,15 +760,15 @@ body
     } 
 }
 
-@media screen and (max-width:640px)
+@media screen and (max-width:840px)
 {
-    .text
+    .text .texto
     {
-        height: 800px;
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width:500px)
+@media screen and (max-width:540px)
 {
     .home
     {
@@ -844,19 +844,19 @@ body
 
     .text
     {
-        height: 600px;
+        height: 500px;
     }
 
     .text h1
     {
-        margin-top: 60px;
+        margin-top: 30px;
         margin-bottom: 30px;
         font-size: 30px;
     }
 
     .text .texto
     {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .footer-items
@@ -882,12 +882,12 @@ body
 
     .text
     {
-        height: 700px;
+        height: 600px;
     }
 
     .text h1
     {
-        margin-top: 20px;
+        margin-top: -10px;
     }
 
     .text .texto
@@ -915,16 +915,34 @@ body
 
     .text
     {
-        height: 500px;  
+        height: 500px;
     }
 
     .text h1
     {
-        margin-top: 30px;
+        margin-top: -20px;
     }
 
     .text .texto
     {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width:345px)
+{
+    .text
+    {
+        height: 400px;
+    }
+
+    .text h1
+    {
+        margin-top: -30px;
+    }
+
+    .text .texto
+    {
+        font-size: 12.2px;
     }
 }
