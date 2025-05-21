@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloformulario.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script type="text/javascript" src="jspdf/js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jspdf/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.addimage.js"></script>
+
+	<script type="text/javascript" src="jspdf/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf/jspdf.plugin.from_html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Preguntas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <div class="logo" style="margin-right: 16px;"><img src="icon.webp" alt="Logo de la página"></div>
+                <h1 class="title">Preguntas</h1>
+            </div>
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo"><img src="icon.webp" alt="Logo de la página"></div>
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#"><span>Menú</span></a>
+                        <i class="bi bi-caret-down"></i>
+                            <ul class="sub-menu">
+                                <li><a href="../index.html"><span>inicio</span></a></li>
+                                <li><a href="../contexto/contexto.html"><span>contexto</span></a></li>
+                                <li><a href="../actualidad/actualidad.html"><span>actualidad</span></a></li>
+                                <li><a href="../impacto/impacto.html"><span>impacto</span></a></li>
+                                <li><a href="../servicios/servicios.html"><span>servicios</span></a></li>
+                                <li><a href="../chatbot/chatbot.html"><span>interacción</span></a></li>
+                                <li><a href="../blog/blog.html"><span>blog</span></a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </nav>
+        <div class="header-right">
+            <button type="button" class="open-menu-btn">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+        </div>
+    </header>
+    <form class="form-box" id="quizForm">
+        <div class="cont">
+            <h1 class="title">FORMULARIO</h1>
+        </div>
+        <fieldset class="first-quest">
+            <legend>1. ¿Qué permite a las computadoras simular la inteligencia humana?</legend>
+            <label>
+                <input type="radio" name="first" value="software antivirus">
+                <div class="circle"></div>
+                <span>Software antivirus</span>
+            </label>
+            <label>
+                <input type="radio" name="first" value="bases de datos">
+                <div class="circle"></div>
+                <span>Bases de datos</span>
+            </label>
+            <label>
+                <input type="radio" name="first" value="inteligencia artificial">
+                <div class="circle"></div>
+                <span>Inteligencia artificial</span>
+            </label>
+            <label>
+                <input type="radio" name="first" value="red de comunicación">
+                <div class="circle"></div>
+                <span>Red de comunicación</span>
+            </label>
+        </fieldset>
+        <fieldset class="second-quest">
+            <legend>2. ¿Cuál de las siguientes es una desventaja de la inteligencia artificial?</legend>
+            <label>
+                <input type="radio" name="second" value="Automatización eficiente">
+                <div class="circle"></div>
+                <span>Automatización eficiente</span>
+            </label>
+            <label>
+                <input type="radio" name="second" value="Avances en la atención médica">
+                <div class="circle"></div>
+                <span>Avances en la atención médica</span>
+            </label>
+            <label>
+                <input type="radio" name="second" value="Personalización del cliente">
+                <div class="circle"></div>
+                <span>Personalización del cliente</span>
+            </label>
+            <label>
+                <input type="radio" name="second" value="Desplazamiento laboral">
+                <div class="circle"></div>
+                <span>Desplazamiento laboral</span>
+            </label>
+        </fieldset>
+        <fieldset class="third-quest">
+            <legend>3. ¿Quién acuñó formalmente el término “inteligencia artificial”?</legend>
+            <label>
+                <input type="radio" name="third" value="Alan Turing">
+                <div class="circle"></div>
+                <span>Alan Turing</span>
+            </label>
+            <label>
+                <input type="radio" name="third" value="Steve Jobs">
+                <div class="circle"></div>
+                <span>Steve Jobs</span>
+            </label>
+            <label>
+                <input type="radio" name="third" value="John McCarthy">
+                <div class="circle"></div>
+                <span>John McCarthy</span>
+            </label>
+            <label>
+                <input type="radio" name="third" value="Martin Fischles">
+                <div class="circle"></div>
+                <span>Martin Fischles</span>
+            </label>
+        </fieldset>
+        <fieldset class="fourth-quest">
+            <legend>4. ¿Cuál es una de las capacidades que debe tener un agente inteligente, según Fischles y Firschein?</legend>
+            <label>
+                <input type="radio" name="fourth" value="Producir electricidad">
+                <div class="circle"></div>
+                <span>Producir electricidad</span>
+            </label>
+            <label>
+                <input type="radio" name="fourth" value="Resolver problemas">
+                <div class="circle"></div>
+                <span>Resolver problemas</span>
+            </label>
+            <label>
+                <input type="radio" name="fourth" value="Transmitir datos">
+                <div class="circle"></div>
+                <span>Transmitir datos</span>
+            </label>
+            <label>
+                <input type="radio" name="fourth" value="Operar manualmente">
+                <div class="circle"></div>
+                <span>Operar manualmente</span>
+            </label>
+        </fieldset>
+        <fieldset class="fifth-quest">
+            <legend>5. ¿Qué elemento no puede ser sustituido por la inteligencia artificial en el ámbito educativo?</legend>
+            <label>
+                <input type="radio" name="fifth" value="Conocimiento teórico">
+                <div class="circle"></div>
+                <span>Conocimiento teórico</span>
+            </label>
+            <label>
+                <input type="radio" name="fifth" value="Empatía y liderazgo">
+                <div class="circle"></div>
+                <span>Empatía y liderazgo</span>
+            </label>
+            <label>
+                <input type="radio" name="fifth" value="Resúmenes automáticos">
+                <div class="circle"></div>
+                <span>Resúmenes automáticos</span>
+            </label>
+            <label>
+                <input type="radio" name="fifth" value="Contenido multimedia">
+                <div class="circle"></div>
+                <span>Contenido multimedia</span>
+            </label>
+        </fieldset>
+        <fieldset class="sixth-quest">
+            <legend>6. ¿Cuál de los siguientes son atributos de un agente inteligente?</legend>
+            <label>
+                <input type="radio" name="sixth" value="No tener o comprender el razonamiento humano">
+                <div class="circle"></div>
+                <span>No tener o comprender el razonamiento humano</span>
+            </label>
+            <label>
+                <input type="radio" name="sixth" value="Tener la capacidad de obtener aprendizaje">
+                <div class="circle"></div>
+                <span>Tener la capacidad de obtener aprendizaje</span>
+            </label>
+            <label>
+                <input type="radio" name="sixth" value="Predecir el futuro">
+                <div class="circle"></div>
+                <span>Predecir el futuro</span>
+            </label>
+            <label>
+                <input type="radio" name="sixth" value="Generar escritos">
+                <div class="circle"></div>
+                <span>Generar escritos</span>
+            </label>
+        </fieldset>
+        <fieldset class="seventh-quest">
+            <legend>7. ¿Cuál es una ventaja que ofrece la IA en el arte según Mingyong Cheng?</legend>
+            <label>
+                <input type="radio" name="seventh" value="Sustitución definitiva de artistas humanos">
+                <div class="circle"></div>
+                <span>Sustitución definitiva de artistas humanos</span>
+            </label>
+            <label>
+                <input type="radio" name="seventh" value="Crear ideas creativas totalmente de 0">
+                <div class="circle"></div>
+                <span>Crear ideas creativas totalmente de 0</span>
+            </label>
+            <label>
+                <input type="radio" name="seventh" value="Crear imágenes o arte en base a la alimentación de base de datos">
+                <div class="circle"></div>
+                <span>Crear imágenes o arte en base a la alimentación de base de datos</span>
+            </label>
+            <label>
+                <input type="radio" name="seventh" value="Abre las puertas a la creación y experimentación de novedosos conceptos">
+                <div class="circle"></div>
+                <span>Abre las puertas a la creación y experimentación de novedosos conceptos</span>
+            </label>
+        </fieldset>
+        <fieldset class="eighth-quest">
+            <legend>8. ¿Cuáles son principios éticos fundamentales en el desarrollo de la IA?</legend>
+            <label>
+                <input type="radio" name="eighth" value="Transparencia">
+                <div class="circle"></div>
+                <span>Egocentrismo</span>
+            </label>
+            <label>
+                <input type="radio" name="eighth" value="Ambigüedad">
+                <div class="circle"></div>
+                <span>Transparencia</span>
+            </label>
+            <label>
+                <input type="radio" name="eighth" value="Responsabilidad">
+                <div class="circle"></div>
+                <span>Ambigüedad</span>
+            </label>
+            <label>
+                <input type="radio" name="eighth" value="Equidad">
+                <div class="circle"></div>
+                <span>Indiferencia</span>
+            </label>
+        </fieldset>
+        <fieldset class="nineth-quest">
+            <legend>9. La inteligencia artificial no plantea ningún problema ético o de privacidad.</legend>
+            <label>
+                <input type="radio" name="nineth" value="verdadero">
+                <div class="circle"></div>
+                <span>Verdadero</span>
+            </label>
+            <label>
+                <input type="radio" name="nineth" value="falso">
+                <div class="circle"></div>
+                <span>Falso</span>
+            </label>
+            </fieldset>
+        <fieldset class="tenth-quest">
+            <legend>10. ChatGPT se ha convertido en una herramienta común para estudiantes y docentes por su capacidad de ofrecer información confiable rápidamente.</legend>
+            <label>
+                <input type="radio" name="tenth" value="verdadero">
+                <div class="circle"></div>
+                <span>Verdadero</span>
+            </label>
+            <label>
+                <input type="radio" name="tenth" value="falso">
+                <div class="circle"></div>
+                <span>Falso</span>
+            </label>
+            </fieldset>
+            <button type="submit" class="btnform">Generar</button>
+    </form>
+    <div class="table" id="tabla2"></div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-items">
+                <div class="footer-item footer-logo">
+                    <img src="icon.webp" alt="Logo de la pagina">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h3>acceso rápido</h3>
+                    <ul>
+                        <li><a href="../index.html"><span>inicio</span></a></li>
+                        <li><a href="../contexto/contexto.html"><span>contexto</span></a></li>
+                        <li><a href="../actualidad/actualidad.html"><span>actualidad</span></a></li>
+                        <li><a href="../impacto/impacto.html"><span>impacto</span></a></li>
+                        <li><a href="../servicios/servicios.html"><span>servicios</span></a></li>
+                        <li><a href="../chatbot/chatbot.html"><span>interacción</span></a></li>
+                        <li><a href="../blog/blog.html"><span>blog</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-item footer-newsletter">
+                    <h3>newsletter</h3>
+                    <p>Suscríbete a nuestro newsletter para obtener las más recientes actualizaciones y noticias.</p>
+                    <form class="form">
+                        <input type="email" placeholder="Correo Electrónico">
+                        <button type="submit" class="btn">Suscríbete</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright 2025. Todos los derechos reservados</p>
+                <p>Proyecto de Curso Optativo de Núcleo II: Programación Web
+                Universidad Politécnica de San Luis Potosí 
+                Ing. En Tecnologías de la Información<br/>
+                186106 - Berlanga Contreras Ahtziri  
+                 / 187949 - Roque Flores Cristopher </p>
+            </div>
+        </div>
+    </footer>
+    <script src="formulario.js"></script>   
+</body>
+</html>

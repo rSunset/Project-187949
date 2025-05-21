@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilointeraccion.css">
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="icon" type="image/webp" href="icon.webp">
+
+    <title>Blog</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <div class="logo" style="margin-right: 16px;"><img src="icon.webp" alt="Logo de la página"></div>
+                <h1 class="title">Blog</h1>
+            </div>
+            <nav class="menu">
+                <div class="head">
+                    <div class="logo"><img src="icon.webp" alt="Logo de la página"></div>
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#"><span>Menú</span></a>
+                        <i class="bi bi-caret-down"></i>
+                            <ul class="sub-menu">
+                                <li><a href="../index.html"><span>inicio</span></a></li>
+                                <li><a href="../contexto/contexto.html"><span>contexto</span></a></li>
+                                <li><a href="../actualidad/actualidad.html"><span>actualidad</span></a></li>
+                                <li><a href="../impacto/impacto.html"><span>impacto</span></a></li>
+                                <li><a href="../formulario/formulario.html"><span>preguntas</span></a></li>
+                                <li><a href="../servicios/servicios.html"><span>servicios</span></a></li>
+                                <li><a href="../chatbot/chatbot.html"><span>interacción</span></a></li>
+                            </ul>
+                    </li>
+                </ul>
+            </nav>
+        <div class="header-right">
+            <button type="button" class="open-menu-btn">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <h1>Sección de comentarios</h1>
+            <p>Te proporcionamos esta caja de comentarios para que puedas expresar tus opcniones e ideas del curso con otros usuarios que tambien 
+               estan realizando las diferentes actividades que tenemos a tu disposicion.
+            </p>
+        </div>
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+        <script type="text/javascript" id="hcb"> if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%248FYJMIXBkxGYH9tO4KOvK%2F"+"&opts=16798&num=10&ts=1747785817832");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-items">
+                <div class="footer-item footer-logo">
+                    <img src="icon.webp" alt="Logo de la pagina">
+                    <div class="social">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h3>acceso rápido</h3>
+                    <ul>
+                        <li><a href="../index.html"><span>inicio</span></a></li>
+                        <li><a href="../contexto/contexto.html"><span>contexto</span></a></li>
+                        <li><a href="../actualidad/actualidad.html"><span>actualidad</span></a></li>
+                        <li><a href="../impacto/impacto.html"><span>impacto</span></a></li>
+                        <li><a href="../formulario/formulario.html"><span>preguntas</span></a></li>
+                        <li><a href="../servicios/servicios.html"><span>servicios</span></a></li>
+                        <li><a href="../chatbot/chatbot.html"><span>interacción</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-item footer-newsletter">
+                    <h3>newsletter</h3>
+                    <p>Suscríbete a nuestro newsletter para obtener las más recientes actualizaciones y noticias.</p>
+                    <form class="form">
+                        <input type="email" placeholder="Correo Electrónico">
+                        <button type="submit" class="btn">Suscríbete</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright 2025. Todos los derechos reservados</p>
+                <p>Proyecto de Curso Optativo de Núcleo II: Programación Web
+                Universidad Politécnica de San Luis Potosí 
+                Ing. En Tecnologías de la Información<br/>
+                186106 - Berlanga Contreras Ahtziri  
+                 / 187949 - Roque Flores Cristopher </p>
+            </div>
+        </div>
+    </footer>
+    <script src="interaccionjava.js"></script>
+</body>
+</html>
