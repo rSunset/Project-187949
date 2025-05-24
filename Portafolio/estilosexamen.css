@@ -1,0 +1,91 @@
+*
+{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: hsl(60, 2%, 21%);
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+h1
+{
+    text-align: center;
+    font-weight: 500;
+    color: hsl(60, 2%, 21%);
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 50px auto;
+    padding: 15px 30px;
+    background-color: hsl(72, 87%, 51%);
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .text
+{
+    width: 600px;
+    padding: 30px;
+    background-color: hsl(60, 2%, 21%);
+    margin-left: calc(50% - 300px);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-bottom: none;
+}
+
+.container .text #horas
+{
+    width: 400px;
+    margin-left: calc(50% - 200px);
+    padding: 10px 5px;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.container .text h1
+{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .select
+{
+    width: 600px;
+    padding: 30px;
+    background-color: hsl(60, 2%, 21%);
+    margin-left: calc(50% - 300px);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-top: none;
+}
+
+.container .select #elegir
+{
+    width: 400px;
+    margin-left: calc(50% - 200px);
+    padding: 10px 5px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.container .select h1
+{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+.container #calcular
+{
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: calc(50% - 300px);
+    padding: 20px 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+}

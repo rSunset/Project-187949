@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosexamen.css">
+    <link rel="shortcut icon" href="icon.webp" type="image/x-icon">
+    <title>Examen Práctico Parcial 3</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculador de horas en estacionamiento</h1>
+        <form id="formul">
+            <div class="text">
+                <h1>Horas de estacionamiento</h1>
+                <input type="number" id="horas" placeholder="Ingrese el numero de horas dentro del estacionamiento" min="1">
+            </div>
+            <div class="select">
+                <h1>Eliga su tipo de vehiculo</h1>
+                <select id="elegir">
+                    <option value="20">Auto Chico</option>
+                    <option value="30">Camioneta</option>
+                    <option value="40">Camión</option>
+                </select>
+            </div>
+        </form> 
+        <button id="calcular" type="button">Calcular el total a pagar</button>
+    </div>
+    <div class="container">
+        <div class="show">El total a pagar es: <span id="resultado"></span></div>
+    </div>
+    <script src="javaexamen.js"></script>
+</body>
+</html>
